@@ -54,6 +54,17 @@
                 margin-bottom: var(--espacoPeq);
                 color: var(--corTexto)
             }
+
+            .Pesquisar{
+
+                width: 240px;
+                border-radius: 8px;
+                border-color: var(--corTexto);
+                background-color: var(--corPrimaria);
+                input::placeholder{
+                    color: var(--corTexto);
+                }
+            }
                 
             .table td {
                 border: 4px solid var(--corPrimaria);
@@ -74,13 +85,15 @@
                 height: 100vh;
                 max-width: 100%;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
             
-            .table{
+            .table{ 
+                margin-top: 100px;
                 width: 90%;
-     
+                
                 border: var(--espacoPeq);
                 border-style: solid;
                 border-color: var(--corPrimaria);
@@ -113,8 +126,13 @@
         </header>
 
         <main class="containerFull">
-        
+
+            <div class="Pesquisar">
+                <input type="text" class="Pesquisar" id="searchInput" placeholder="Pesquisar...">
+            </div>
             <table class="table">
+
+                
             <!-- 
             •	Nome, 
             •	numero de telefone, 
