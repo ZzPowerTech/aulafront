@@ -1,0 +1,90 @@
+:root {
+    --corPrimaria: #941dac;
+    --corSecundaria: #ff20c7ce;
+    --corTerciaria: #680163;
+    --corQuaternaria: #700e5b;
+    --corTexto: #000000;
+    --corFundo: #ffffff;
+
+    --espacoPeq: 8px;
+    --espacoMed: 16px;
+    --espacoGde: 32px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --corPrimaria: #76018d;
+      --corSecundaria: #ff20c7ce;
+      --corTerciaria: #a800f7;
+      --corQuaternaria: #700e5b;
+      --corTexto: #ffffff;
+      --corFundo: #302f2f;
+
+      --espacoPeq: 8px;
+      --espacoMed: 16px;
+      --espacoGde: 32px;
+    }
+  }
+
+  .headerAula {
+    background-color: var(--corTerciaria);
+    color: var(--corFundo);
+    padding: var(--espacoMed);
+    height: 180px;
+
+    border-bottom: var(--espacoPeq);
+    border-color: var(--corPrimaria);
+    border-style: solid;
+    box-shadow: 0px 0px 20px var(--corPrimaria);
+  }
+  .headerAula h1 {
+    font-size: 1.5rem;
+    margin-bottom: var(--espacoPeq);
+    color: var(--corTexto)
+  }
+  .headerAula p {
+    font-size: 1.0rem;
+    margin-bottom: var(--espacoPeq);
+    color: var(--corTexto)
+  }
+  
+  .containerFull {
+    background-color: var(--corFundo);
+    padding: var(--espacoGde);
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerAula {
+    background-color: var(--corTerciaria);
+    padding: var(--espacoMed);
+    margin: var(--espacoMed);
+
+    height: 100%;
+    width: 40%;
+
+    border: var(--espacoPeq);
+    border-style: solid;
+    border-color: var(--corPrimaria);
+    border-radius: var(--espacoGde);
+    box-shadow: 0px 0px 40px var(--corPrimaria);
+  }
+
+  .containerAula label {
+    color: var(--corTexto);
+    font-size: 1.2rem;
+  }
+
+  .footerAula {
+    background-color: var(--corTerciaria);
+    color: var(--corFundo);
+    padding: var(--espacoMed);
+    height: 90px;
+
+    border-top: var(--espacoPeq);
+    border-color: var(--corPrimaria);
+    border-style: solid;
+    box-shadow: 0px 0px 10px var(--corPrimaria);
+  }
